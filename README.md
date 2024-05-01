@@ -4,7 +4,10 @@
 
 # 话不多说，先看效果
 
-<video src="./asset/show.mp4" height="480px" autoplay="autoplay" loop="loop" controls="controls"></video> 
+<video width="320" height="240" controls>
+  <source src="./asset/show.mp4" type="video/mp4">
+  您的浏览器不支持视频标签。
+</video>
 
 # 如何使用
 
