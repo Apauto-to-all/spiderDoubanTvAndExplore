@@ -4,12 +4,7 @@
 
 # 话不多说，先看效果
 
-
-<div>
-<video src='./asset/show.mp4' width="640" height="480" controls>
-</div>
-
-
+<video src="./asset/show.mp4" height="480px" autoplay="autoplay" loop="loop" controls="controls"></video> 
 
 # 如何使用
 
