@@ -2,12 +2,6 @@
 
 本项目仅供学习和研究使用，使用者应遵守相关法律法规，任何由使用者因违法使用所产生的后果，与本项目无关。[爬虫违法违规案例](https://github.com/HiddenStrawberry/Crawler_Illegal_Cases_In_China)
 
-# 话不多说，先看效果
-
-
-<video src="./asset/show.mp4" autoplay="true" controls="controls" width="640" height="480">
-</video>
-
 
 # 如何使用
 
