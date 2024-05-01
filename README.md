@@ -50,7 +50,7 @@ all_data = {
     "tv or movie类型": item_type,
 }
 ```
-添加保存方式，推荐保存到数据库，项目内附有`explore样例.json`和`tv样例.json`2个样例文件，可以自行参考提取所需数据
+添加储存方式，推荐储存到数据库，项目内附有`explore样例.json`和`tv样例.json`2个样例文件，也可以自行参考其中的内容提取所需数据
 
 5. 最后运行`__init__.py`文件，就能不断爬取信息。
 >注意：
@@ -60,6 +60,8 @@ all_data = {
 > 2. 在`__init__.py`文件中，可以自行修改`PlaywrightTvAndExplore(choice_dict)`中的choice_dict值，设置爬取的页面和类型，相关格式可以参考`MainRun`类中的`main()`函数
 >
 > 3. log日志会储存在目录下的`PlaywrightTvAndExplore.log`文件中
+>
+> 4. 提取出来的`导演`和`演员`会出现问题，因为人名是按空格分割的，而有些人名是非中文的……如果介意可以修改代码，不按空格分割人名
 
 # 可选
 `FunctionTvAndExplore.py`文件中：
