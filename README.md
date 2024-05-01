@@ -48,7 +48,7 @@ all_data = {
 5. 最后运行`__init__.py`文件，就能不断爬取信息。
 >注意：
 >
-> 1. 设置了自动保存功能，每爬取self.every_save_data_count更组合就会保存一次数据，如果不希望运行了，可以直接选择退出
+> 1. 设置了自动保存功能，每爬取`self.every_save_data_count`个组合就会保存一次数据，如果不希望运行了，可以直接选择退出
 >
 > 2. 在`__init__.py`文件中，可以自行修改`PlaywrightTvAndExplore(choice_dict)`中的choice_dict值，设置爬取的页面和类型，相关格式可以参考`MainRun`类中的`main()`函数
 >
