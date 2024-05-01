@@ -4,9 +4,7 @@
 
 # 话不多说，先看效果
 
-<video width="320" height="240" controls>
-  <source src="./asset/show.mp4" type="video/mp4">
-  您的浏览器不支持视频标签。
+<video src="./asset/show.mp4" autoplay="true" controls="controls" width="640" height="480">
 </video>
 
 # 如何使用
