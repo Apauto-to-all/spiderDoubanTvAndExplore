@@ -4,9 +4,12 @@
 
 # 话不多说，先看效果
 
-<video width="640" height="480" controls>
-  <source src="./asset/playwright爬取豆瓣效果演示.mp4" type="video/mp4">
-</video>
+<table>
+    <video width="640" height="480" controls>
+        <source src="./asset/show.mp4" type="video/mp4">
+    </video>
+</table>
+
 
 
 # 如何使用
