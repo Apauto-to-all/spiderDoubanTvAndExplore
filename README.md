@@ -2,11 +2,18 @@
 
 本项目仅供学习和研究使用，使用者应遵守相关法律法规，任何由使用者因违法使用所产生的后果，与本项目无关。[爬虫违法违规案例](https://github.com/HiddenStrawberry/Crawler_Illegal_Cases_In_China)
 
+# 话不多说，先看效果
+
+<video width="320" height="240" controls>
+  <source src="./asset/playwright爬取豆瓣效果演示.mp4" type="video/mp4">
+</video>
+
+
 # 如何使用
 
-1. 搭建python环境（我使用的是3.11.8版本），下载本项目的代码，安装必要的包
+1. 搭建python环境（当前测试环境：3.11.8版本），下载本项目的代码，安装必要的包
 ```python
-# playwright版本
+# 当前测试使用的playwright版本
 pip install playwright==1.43.0
 # 安装好后你需要运行playwright install来下载对应版本的浏览器
 playwright install

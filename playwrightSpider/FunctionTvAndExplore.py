@@ -318,4 +318,4 @@ class FunctionTvAndExplore:
                 "演员": actors,
                 "tv or movie类型": item_type,
             }
-            print(all_data)
+            logging.info(f"抓取数据——id：{id}，标题：{title}")
