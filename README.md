@@ -4,7 +4,7 @@
 
 # 话不多说，先看效果
 
-<video width="320" height="240" controls>
+<video width="640" height="480" controls>
   <source src="./asset/playwright爬取豆瓣效果演示.mp4" type="video/mp4">
 </video>
 
