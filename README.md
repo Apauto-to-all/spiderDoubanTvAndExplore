@@ -4,11 +4,10 @@
 
 # 话不多说，先看效果
 
-<table>
-    <video width="640" height="480" controls>
-        <source src="./asset/show.mp4" type="video/mp4">
-    </video>
-</table>
+
+<div>
+<video src='./asset/show.mp4' width="640" height="480" controls>
+</div>
 
 
 
