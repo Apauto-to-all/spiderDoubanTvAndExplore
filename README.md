@@ -5,8 +5,6 @@
 
 # 项目说明
 
-- 对豆瓣TV、豆瓣Explore和豆瓣Chart页面进行爬取，
-
 - 本项目基于playwright包，可以爬取[豆瓣TV](https://movie.douban.com/tv/)和[豆瓣Explore](https://movie.douban.com/explore)，以及[豆瓣Chart](https://movie.douban.com/chart)页面，获取电影和电视剧的相关信息。
 
 - 在[豆瓣TV](https://movie.douban.com/tv/)页面和[豆瓣Explore](https://movie.douban.com/explore)页面，实现下拉框中选择不同标签，实现不同组合方式，深度挖掘电影/电视剧信息
