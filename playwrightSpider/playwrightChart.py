@@ -221,6 +221,10 @@ class PlaywrightChart(FunChart):
         # 使用asyncio.gather并发地运行所有的任务
         await asyncio.gather(*tasks)
 
+        self.allSpiderLinks = await self.getChartLinks()  # 获取所有链接
+        if self.allSpiderLinks:  # 如果还有未爬取的链接
+            self.open_page()
+
     # 开始爬取所有链接的数据
     async def spiderAll(self, link):
         """
