@@ -21,7 +21,7 @@ class FunChart:
     def __init__(self):
         self.url = "https://movie.douban.com/chart"
         # 浏览器设置
-        self.isHeadless = True  # 是否无头模式
+        self.isHeadless = False  # 是否无头模式
 
         # 并发设置
         self.CONCURRENCY = 3  # 最大并发量
@@ -223,7 +223,7 @@ class PlaywrightChart(FunChart):
 
         self.allSpiderLinks = await self.getChartLinks()  # 获取所有链接
         if self.allSpiderLinks:  # 如果还有未爬取的链接
-            self.open_page()
+            await self.open_page()
 
     # 开始爬取所有链接的数据
     async def spiderAll(self, link):
