@@ -238,30 +238,17 @@ class PlaywrightChart(FunChart):
                 nonlocal slip_count, load_count  # nonlocal声明，可以修改外部变量slip_count, load_count
                 if "/top_list_count?type" in response.url and response.status == 200:
                     # 提取出最大下滑次数
-                    try:
-                        data = await response.json()
-                        max_total = data.get("total", 0)  # 最多爬取的数据量
-                        slip_count = (
-                            max_total / 20
-                        )  # 每次加载20条数据，计算需要下滑的次数
-                        # 判断是否为整数，不是则加1
-                        if slip_count % 1 != 0:
-                            slip_count = int(slip_count) + 1
-
-                    except Exception as e:
-                        logging.error(
-                            f"处理+保存数据出现错误：{e}\n类型：{type(e)}\n堆栈跟踪：\n{traceback.format_exc()}"
-                        )
+                    data = await response.json()
+                    max_total = data.get("total", 0)  # 最多爬取的数据量
+                    slip_count = max_total / 20  # 每次加载20条数据，计算需要下滑的次数
+                    # 判断是否为整数，不是则加1
+                    if slip_count % 1 != 0:
+                        slip_count = int(slip_count) + 1
 
                 if "/top_list?type=" in response.url and response.status == 200:
+                    data = await response.json()
+                    await self.saveData(data)  # 保存爬取的数据
                     load_count += 1  # 加载次数+1
-                    try:
-                        data = await response.json()
-                        await self.saveData(data)  # 保存爬取的数据
-                    except Exception as e:
-                        logging.error(
-                            f"处理+保存数据出现错误：{e}\n类型：{type(e)}\n堆栈跟踪：\n{traceback.format_exc()}"
-                        )
 
             logging.info(f"开始爬取链接：{link}")  # 开始爬取链接
             page = await self.get_page(link)  # 打开页面
