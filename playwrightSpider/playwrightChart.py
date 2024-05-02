@@ -242,8 +242,12 @@ class PlaywrightChart(FunChart):
                         data = await response.json()
                         max_total = data.get("total", 0)  # 最多爬取的数据量
                         slip_count = (
-                            max_total // 20 + 1
+                            max_total / 20
                         )  # 每次加载20条数据，计算需要下滑的次数
+                        # 判断是否为整数，不是则加1
+                        if slip_count % 1 != 0:
+                            slip_count = int(slip_count) + 1
+
                     except Exception as e:
                         logging.error(
                             f"处理+保存数据出现错误：{e}\n类型：{type(e)}\n堆栈跟踪：\n{traceback.format_exc()}"
