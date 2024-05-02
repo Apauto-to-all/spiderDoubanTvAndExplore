@@ -5,9 +5,13 @@
 
 # 项目说明
 
-- 本项目可以爬取[豆瓣TV](https://movie.douban.com/tv/)页面和[豆瓣Explore](https://movie.douban.com/explore)页面的电影和电视剧信息
+- 对豆瓣TV、豆瓣Explore和豆瓣Chart页面进行爬取，
 
-- 并能在页面下拉框中选择不同标签，实现不同组合方式，深度挖掘电影/电视机信息
+- 本项目基于playwright包，可以爬取[豆瓣TV](https://movie.douban.com/tv/)和[豆瓣Explore](https://movie.douban.com/explore)，以及[豆瓣Chart](https://movie.douban.com/chart)页面，获取电影和电视剧的相关信息。
+
+- 在[豆瓣TV](https://movie.douban.com/tv/)页面和[豆瓣Explore](https://movie.douban.com/explore)页面，实现下拉框中选择不同标签，实现不同组合方式，深度挖掘电影/电视剧信息
+
+- 在[豆瓣Chart](https://movie.douban.com/chart)页面，实现对所有分类排行榜标签进行爬取，从 `好于100%-90% 的~` 到 `好于10%-0% 的~`
 
 # 如何使用
 

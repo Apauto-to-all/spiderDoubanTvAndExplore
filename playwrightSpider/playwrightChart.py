@@ -21,10 +21,10 @@ class FunChart:
     def __init__(self):
         self.url = "https://movie.douban.com/chart"
         # 浏览器设置
-        self.isHeadless = False  # 是否无头模式
+        self.isHeadless = True  # 是否无头模式
 
         # 并发设置
-        self.CONCURRENCY = 2  # 最大并发量
+        self.CONCURRENCY = 3  # 最大并发量
         self.semaphore = asyncio.Semaphore(
             self.CONCURRENCY
         )  # 创建一个信号量，限制并发数量为self.CONCURRENCY
