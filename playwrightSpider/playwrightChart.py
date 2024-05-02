@@ -272,7 +272,7 @@ class PlaywrightChart(FunChart):
                         "window.scrollTo(0, document.body.scrollHeight)"
                     )
                     # await page.wait_for_load_state("networkidle")  # 等待网络空闲
-                    await page.wait_for_load_state("load")  # 等待页面加载完成
+                    # await page.wait_for_load_state("load")  # 等待页面加载完成
                     await self.random_sleep()  # 随机等待时间
                     if load_count == slip_count:  # 如果加载次数等于下滑次数，退出循环
                         break
