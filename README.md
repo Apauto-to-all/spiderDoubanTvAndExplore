@@ -3,6 +3,12 @@
 本项目仅供学习和研究使用，使用者应遵守相关法律法规，任何由使用者因违法使用所产生的后果，与本项目无关。[爬虫违法违规案例](https://github.com/HiddenStrawberry/Crawler_Illegal_Cases_In_China)
 
 
+# 项目说明
+
+- 本项目可以爬取[豆瓣TV](https://movie.douban.com/tv/)页面和[豆瓣Explore](https://movie.douban.com/explore)页面的电影和电视剧信息
+
+- 并能在页面下拉框中选择不同标签，实现不同组合方式，深度挖掘电影/电视机信息
+
 # 如何使用
 
 1. 搭建python环境（当前测试环境：3.11.8版本），下载本项目的代码，安装必要的包
